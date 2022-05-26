@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #354547 50%,
+    #1f141feb 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #354547 50%,
+    #1f141feb 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #354547 50%,
+    #1f141feb 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F141F', endColorstr='#0B0B0B', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #354547 50%,
+    #1f141feb 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, #0b0b0b 0%, #354547 50%, #1f141feb 100%);
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
